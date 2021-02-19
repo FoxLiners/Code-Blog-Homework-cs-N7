@@ -1,0 +1,63 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text.RegularExpressions;
+using System.Threading;
+
+namespace Matrix
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            var salmons = new List<int>();
+            {
+                Console.WriteLine("Введите числа 15 раз");
+                int a = int.Parse(Console.ReadLine());
+                int b = int.Parse(Console.ReadLine());
+                int c = int.Parse(Console.ReadLine());
+                int d = int.Parse(Console.ReadLine());
+                int e = int.Parse(Console.ReadLine());
+                int f = int.Parse(Console.ReadLine());
+                int g = int.Parse(Console.ReadLine());
+                int h = int.Parse(Console.ReadLine());
+                int i = int.Parse(Console.ReadLine());
+                int j = int.Parse(Console.ReadLine());
+                int k = int.Parse(Console.ReadLine());
+                int l = int.Parse(Console.ReadLine());
+                int m = int.Parse(Console.ReadLine());
+                int n = int.Parse(Console.ReadLine());
+                int o = int.Parse(Console.ReadLine());
+                salmons.Add(a);
+                salmons.Add(b);
+                salmons.Add(c);
+                salmons.Add(d);
+                salmons.Add(e);
+                salmons.Add(f);
+                salmons.Add(g);
+                salmons.Add(h);
+                salmons.Add(i);
+                salmons.Add(j);
+                salmons.Add(k);
+                salmons.Add(l);
+                salmons.Add(m);
+                salmons.Add(n);
+                salmons.Add(o);
+
+                foreach (var salmon in salmons)
+                {
+                    Console.WriteLine(salmon);
+                }
+                var sum = 0;
+                foreach (var p in salmons) sum += i;
+                Console.WriteLine("Сума: " + sum);
+                var min = 0;
+                foreach (var q in salmons) min -= q;
+                Console.WriteLine("Разность: " + min);
+
+                Console.ReadLine();
+
+            }
+        }
+    }
+}
